@@ -5,62 +5,94 @@ export const style = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#87cefa',
+        backgroundColor: '#2e2e2e',
     },
+
     boxTop: {
-        height: Dimensions.get('window').height / 3,
+        height: Dimensions.get('window').height / 5,
         width: '100%',
         alignItems: 'center',
-        justifyContent: 'center',
-        
-
-
+        justifyContent: 'center'
     },
+
     boxMid: {
-        height: Dimensions.get('window').height / 4,
         width: '100%',
-        paddingHorizontal: 37,     
-
-
+        paddingHorizontal: 37,
+        paddingBottom: 50,
+        paddingTop: 30
     },
-    boxBottom: {
 
+    boxBottom: {
+        paddingTop: 10,
+        flex: 1,
         height: Dimensions.get('window').height / 3,
         width: '100%',
         alignItems: 'center',
-
-
     },
+
+    logo: {
+        width: 80,
+        height: 80
+    },
+
+    text: {
+        fontWeight: 'bold',
+        marginTop: 40,
+        fontSize: 37,
+        color: '#8e007e',
+    },
+
+    titleInput: {
+        marginLeft: 5,
+        color: '#8e007e',
+        marginTop: 20, 
+    },
+
     boxInput: {
         width: '100%',
-        height: 40,
+        height: 50,
         borderWidth: 1,
-        borderRadius: 40,
+        borderRadius: 8,
         marginTop: 10,
         flexDirection: 'row',
         alignItems: 'center',
         paddingHorizontal: 10,
-        backgroundColor:'lightgray',
-        borderColor: "lightgray",
-    
+        backgroundColor: 'gray',
+        borderColor: 'white',
     },
-           titleInput: {
-        marginLeft: 5,
-        color: 'gray',
-        marginTop: 20,
-    },
-       text: {
-        fontWeight: 'bold',
-        marginTop: 40,
-        color: 'black',
-        fontSize: 18,
-    },
+
     input: {
         height: '100%',
-        width: '90%',
+        width: '90%'
+    },
+
+    button: {
+        width: 200,
+        height: 50,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor:'#8e007e',
+        borderRadius: 40,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 5,
+        },
+        shadowOpacity: 0.34,
+        shadowRadius: 6.27,
+        elevation: 10,
+    },
+
+    textButton: {
+        fontSize: 16,
+        color: '#ffff',
+        fontWeight: 'bold',
     },
     
-
-
+    textBottom: {
+        paddingTop: 40,
+        fontSize: 18,
+        color: '#8e007e',
+    }
 
 })
